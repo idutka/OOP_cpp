@@ -2,15 +2,15 @@
 #include "Employee.h"
 using namespace std;
 
-Employee::Employee():name(),age(0),whiskers(0){
+Employee::Employee():name(),pnumber(0),level(0){
 	cout << "Виклик конструкатора без параметрів для: " << this << endl;
 }
-Employee::Employee(char *n,int a,int w):name(n),age(a),whiskers(w){
+Employee::Employee(char *n,int p,int l):name(n),pnumber(p),level(l){
 	cout << "Виклик конструкатора з параметрів для: " << name << endl;
 }
 Employee::Employee(const Employee&){
 	cout << "Виклик конструкатора копіювання для: " << name << endl;
-};
+}
 Employee::~Employee() {
 	cout << "Виклик деструкатора для: " << this << endl;
 }
@@ -19,23 +19,23 @@ Employee::~Employee() {
 char* Employee::getName(){
 	return name;
 };
-int Employee::getAge(){
-	return age;
+int Employee::getPnumber(){
+	return pnumber;
 };
-int Employee::getWhiskers(){
-	return whiskers;
+int Employee::getLevel(){
+	return level;
 };
 void Employee::setName(char* n){
 	name = n;
 };
-void Employee::setAge(int a){
-	age = a;
+void Employee::setPnumber(int p){
+	pnumber = p;
 };
-void Employee::setWhiskers(int w){
-	whiskers = w;
+void Employee::setLevel(int l){
+	level = l;
 };
-void Employee::setEmployee(char* n,int a,int w){
+void Employee::setEmployee(char* n,int p,int l){
 	name = n;
-	age = a;
-	whiskers = w;
+	pnumber = p;
+	level = l;
 };

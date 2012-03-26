@@ -4,19 +4,19 @@ using namespace std;
 
 class Employee {
 	char *name;
-	int age;
-	int whiskers;
+	int pnumber;
+	int level;
 public:
 	Employee();
 	Employee(char*,int,int);
 	Employee(const Employee&);
 	~Employee();
 	char* getName();
-	int getAge();
-	int getWhiskers();
+	int getPnumber();
+	int getLevel();
 	void setName(char*);
-	void setAge(int);
-	void setWhiskers(int);
+	void setPnumber(int);
+	void setLevel(int);
 	void setEmployee(char*,int,int);
 
 };
