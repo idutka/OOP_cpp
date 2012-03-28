@@ -1,14 +1,24 @@
 #include <iostream>
 #include "Employee.h"
+#include "Administration.h"
+#include "Personnel.h"
+#include "Engineer.h"
 using namespace std;
 
 int main(){
 
-Employee emp,a,b,c;
+	Employee *a;
 
-Employee q("sds",23,23);
-emp.setEmployee("qwe",21,3);
+	Administration p1("Vasya",30,10);
+	a=&p1;
+	a->showList();
 
-a=q;
-cout << a.getName() << endl;
+	Personnel p2("Vanya",24,5,3);
+	a=&p2;
+	a->showList();
+
+	Engineer p3("Dima",35,10,5,1);
+	a=&p3;
+	a->showList();
+
 }
