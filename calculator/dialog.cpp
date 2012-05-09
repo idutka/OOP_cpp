@@ -116,6 +116,10 @@ void Dialog::addChar(int c){
     b = z = z*i + 1.0*c/d;
     if(d!=1) d*=10;
     update();
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2a13622568af3fc4df14dc12ac8e05444e49fcc
 };
 
 void Dialog::on_pushButton_11_clicked()
